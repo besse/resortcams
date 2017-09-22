@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){	
+	var cams = [{
+		"name":"Lake Louise",
+	"url": "https://cams.skilouise.com/cam2.jpg"
+},
+{
+	"name":"Nakiska",
+	"url": "http://cams.skinakiska.com/cams/nacam3/nacam3_th.jpg"
+},
+{
+	"name":"Sunshine",
+	"url": "https://cameras.skibanff.com/131x"
+},
+{
+	"name":"Bragg Creek",
+	"url": "https://braggcreek.ca/weather/webcam.jpg"
+},
+{
+	"name":"Marmot Basin",
+	"url": "https://www.skimarmot.com/webcams/MOBOTIX/upper.jpg"
+	}];
+	for(var i = 0; i < cams.length; i++) {
+		$(".div1").append("<img src=\"" + cams[i].url + "\" style=\"width:100%;\"><br><center>" + cams[i].name + "</center><br>");
+		};
+});
+
+</script>
+</head>
+<body>
+ <div class="div1" style="width:100%;">
+     
+</div>
+
+</body>
+</html>
